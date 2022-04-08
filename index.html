@@ -20,6 +20,8 @@
 
         i {
             font-size: 25px;
+            margin-right: 50px;
+            padding-top: 15px;
 
         }
     </style>
@@ -31,20 +33,19 @@
             <ul class="navigation-bar">
 
                 <div class="left-nav">
-                    <span>Free Delivery</span>
-                    <span>Call to Order 0705119096</span>
+                    <span class="nav-text">Free Delivery</span>
+                    <span class="nav-text">Call to Order   0705119096</span>
 
                     <div class="right-nav">
 
 
                         <form>
 
-                            <button type="submit"
-                                formaction="https://atwijukirebrendahsurvery-form.netlify.app/">Login</button>
-                            <button type="submit" formaction="https://atwijukirebrendahsurvery-form.netlify.app/"
+                            <button type="submit" formaction="https://atwijukirebrendahsurvery-form.netlify.app/">Login</button>
+                            <button type="button" id="btnSignUp" formaction="https://atwijukirebrendahsurvery-form.netlify.app/"
                                 target="_blank">SignUp</button>
 
-                            <!-- <span><i class="fa-solid fa-cart-circle-plus"></i> </span> -->
+                           
 
                         </form>
 
@@ -58,16 +59,17 @@
 
         <section class="search-area">
             <div>
+               
                 <ul class="bottom-navigation">
-                    <p>GADGET WORLD</p>
-
-                    <span>
-                        <form id="">
+                    <span style="font-weight: bold;">GADGET WORLD</span>
+                    
+                    <span class="search-span">
+                        <div id="">
                             <input type="text" id="searchbar" placeholder="Search Brands and Categories">
 
-                            <button>SEARCH</button>
+                            <button id="btnSearch" >SEARCH</button>
 
-                        </form>
+                        </div>
                     </span>
 
 
@@ -86,147 +88,215 @@
     <section id="main">
         <div class="left-div">
             <div class="category-section">
-
+                <ul class="phone-brands-list">
+                    <li class="phone-brand" ><a href="#section-iphone">Iphone</a></li>
+                    <li class="phone-brand" ><a href="#section-sumsang">Samsung</a></li>
+                    <li class="phone-brand" ><a href="#section-infinix">Infinix</a></li>
+                    <li class="phone-brand" ><a href="#section-techno">Techno</a></li>
+                    
+                </ul>
             </div>
         </div>
 
         <div class="right-div">
-            <h3>London</h3>
-            <p>London is the capital city of England.</p>
+            <div>
+                <img src="assets/Images/flash-sale.jpg" />
+                <p>Apple Iphone 13</p>
+                <p>UGX 3,000,000</p>
+                <p>10% Discount</p>
+            </div>
         </div>
 
 
     </section>
 
-    <section id="projects-section">
-
-        <h1 style="background-color:orange; width:100%; height: 50px;"><u>Samsung</u></h1>
-
-        <div class="projects">
-            <div class="project-tile">
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/"><img src="./Images/surveyform.PNG"
-                        alt="survey form" style="width:200px; height:200px; margin-right: 50px;"></a>
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/">
-                    <h2 class="project-text">Survey-Form</h2>
-                </a>
-                <div>
-                    <p class="description">This survey form was built using html</p>
-                    <p class="description">and plain CSS </p>
-
+    <section id="display-section">
+        <div class="model-section">
+            <div id="section-iphone">
+                <h1 style="background-color:orange; width:100%; height: 50px;"><u>Iphone</u></h1>
+                <ul id="iphone-models" class="models">
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 13</p>
+                                <p>UGX 5,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 12</p>
+                                <p>UGX 4,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 11</p>
+                                <p>UGX 3,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 11</p>
+                                <p>UGX 5,000,000</p>
+                            </div>
+                        </a>
+                    </li>
                 </div>
             </div>
-            <div class="project-tile">
-                <a href="https://brendacapstoneproject.netlify.app/"><img src="./Images/portifolio.PNG"
-                        alt="personal portifolio" style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://brendacapstoneproject.netlify.app/">
-                    <h2 class="project-text">Personal Portifolio</h2>
-                </a>
-                <div style="margin-right: 20px;">
-                    <p class="description">This is my second project built using html&CSS</p>
-                </div>
-            </div>
-
-            <div class="project-tile">
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git"><img
-                        src="./Images/dailyexpensetrackersceeenshot.PNG" alt="daily expense tracker"
-                        style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git">
-                    <h2 class="project-text">Daily ExpenseTracker</h2>
-                </a>
-                <div>
-                    <p class="description">A software company asked me to build this</p>
-                    <p class="description">app while applying for a job in their company</p>
-
-                </div>
-            </div>
-
+            <br>
+           
         </div>
         <br>
 
-        <h1 style="background-color:orange; width:100%; height: 50px;"><u>Nokia</u></h1>
-
-        <div class="projects">
-            <div class="project-tile">
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/"><img src="./Images/surveyform.PNG"
-                        alt="survey form" style="width:200px; height:200px; margin-right: 50px;"></a>
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/">
-                    <h2 class="project-text">Survey-Form</h2>
-                </a>
-                <div>
-                    <p class="description">This survey form was built using html</p>
-                    <p class="description">and plain CSS </p>
-
+        <div class="model-section">
+            <div id="section-samsung">
+                <h1 style="background-color:orange; width:100%; height: 50px;"><u>Samsung</u></h1>
+                <ul id="sumsang-models" class="models">
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
                 </div>
             </div>
-            <div class="project-tile">
-                <a href="https://brendacapstoneproject.netlify.app/"><img src="./Images/portifolio.PNG"
-                        alt="personal portifolio" style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://brendacapstoneproject.netlify.app/">
-                    <h2 class="project-text">Personal Portifolio</h2>
-                </a>
-                <div style="margin-right: 20px;">
-                    <p class="description">This is my second project built using html&CSS</p>
-                </div>
-            </div>
-
-            <div class="project-tile">
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git"><img
-                        src="./Images/dailyexpensetrackersceeenshot.PNG" alt="daily expense tracker"
-                        style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git">
-                    <h2 class="project-text">Daily ExpenseTracker</h2>
-                </a>
-                <div>
-                    <p class="description">A software company asked me to build this</p>
-                    <p class="description">app while applying for a job in their company</p>
-
-                </div>
-            </div>
-
+            <br>
+           
         </div>
-        <br>
 
-        <h1 style="background-color:orange; width:100%; height: 50px;"><u>Infinix</u></h1>
-
-        <div class="projects">
-            <div class="project-tile">
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/"><img src="./Images/surveyform.PNG"
-                        alt="survey form" style="width:200px; height:200px; margin-right: 50px;"></a>
-                <a href="https://atwijukirebrendahsurvery-form.netlify.app/">
-                    <h2 class="project-text">Survey-Form</h2>
-                </a>
-                <div>
-                    <p class="description">This survey form was built using html</p>
-                    <p class="description">and plain CSS </p>
-
+        <div class="model-section">
+            <div id="section-infinix">
+                <h1 style="background-color:orange; width:100%; height: 50px;"><u>Infinix</u></h1>
+                <ul id="infinix-models" class="models">
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
                 </div>
             </div>
-            <div class="project-tile">
-                <a href="https://brendacapstoneproject.netlify.app/"><img src="./Images/portifolio.PNG"
-                        alt="personal portifolio" style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://brendacapstoneproject.netlify.app/">
-                    <h2 class="project-text">Personal Portifolio</h2>
-                </a>
-                <div style="margin-right: 20px;">
-                    <p class="description">This is my second project built using html&CSS</p>
-                </div>
-            </div>
-
-            <div class="project-tile">
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git"><img
-                        src="./Images/dailyexpensetrackersceeenshot.PNG" alt="daily expense tracker"
-                        style="width:200px; height:200px; margin-right: 50px; "></a>
-                <a href="https://github.com/AtwijukireBrendah/My-Daily-Expense-Tracker.git">
-                    <h2 class="project-text">Daily ExpenseTracker</h2>
-                </a>
-                <div>
-                    <p class="description">A software company asked me to build this</p>
-                    <p class="description">app while applying for a job in their company</p>
-
-                </div>
-            </div>
-
+            <br>
+           
         </div>
+
+        <div class="model-section">
+            <div id="section-tecno">
+                <h1 style="background-color:orange; width:100%; height: 50px;"><u>Techno</u></h1>
+                <ul id="tecno-models" class="models">
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p class="model-tag">name</p>
+                                <p class="model-tag">price</p>
+                            </div>
+                        </a>
+                    </li>
+                </div>
+            </div>
+            <br>
+           
+        </div>
+
+       
         <br>
         <br>
 
@@ -266,6 +336,8 @@
         </div>
 
     </footer>
+    <script src="javascript/osc.js" ></script>
     <script src="javascript/index.js" ></script>
+    <script src="javascript/signup.js" ></script>
 </body>
 </html>
