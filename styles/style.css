@@ -32,18 +32,16 @@ display: flex;
 padding-top: 20px;
 padding-bottom: 10px;
 
-
 }
- span{
-width: 800px;
 
+button{
+    height:40px;
+    background-color:beige;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
- }
-
-#searchbar{
-
-width: 400px;
- }
 
 div.left-nav{
     display: flex;
@@ -61,25 +59,43 @@ div.right-nav{
   
 }
 
+.nav-text{
+    width: 500px;
+}
+
 ul.bottom-navigation{
-   background-color: beige;
-   color: black;
-    height: 80px;
-  display: flex;
-  flex-direction: row;
-  position: fixed;
- width: 98%;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 20px;
+    background-color: beige;
+    color: black;
+     height: 80px;
+   display: flex;
+   flex-direction: row;
+   position: fixed;
+  width: 98%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   padding-top: 20px;
+  
+     }
+
+.search-span{
+width: 800px;
+
+
+ }
+
+#searchbar{
+
+width: 400px;
+ }
+
  
+input[type="text"]{
+    width: 1080px;
+    height: 40px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    /* .bottom-list{
-        display: block;
-        width: 100px;
-        padding-top: 20px;
-        color: black;
-    } */
 
     #main{
 display: flex;
@@ -99,21 +115,7 @@ width: 100%;
     width: 40%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
-
 }
-
-.category-section{
-    display: flex;
-    justify-content: flex-start;
-    width:500px;
-    height: 500px;
-    background-color: beige;
-   
-
-
-
-}
-
 
 .right-div{
     height: 300px;
@@ -127,7 +129,21 @@ width: 100%;
     
 }
 
-.projects{
+.category-section{
+    display: flex;
+    justify-content: flex-start;
+    width:500px;
+    height: 500px;
+    background-color: beige;
+    padding-left: 0px;
+}
+
+#display-section{
+   
+
+ } 
+    
+.model-section{
     display: flex;
     flex-direction: row;
    margin-left: 50px;
@@ -136,41 +152,52 @@ justify-content: center;
 
 
 }
-.project-tile{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin-right: 40px;
-    padding-left: 50px;
-    background-color: blueviolet;
-    
+.section-iphone {
+   
+}
+
+.phone-brands-list {
+    padding: 1rem;
+    width: 100%;
+    list-style: none;
+}
+
+.phone-brand {
+    border: 1px solid #71717133;
+    border-radius: .3rem;
+    margin-bottom: .1rem;
+}
+
+
+.phone-brand > a {
+    text-decoration: none;
+}
+
+.models {
+    display: block;
+    width: 100%;
+    background-color: green;
+}
+
+.model-tile {
+    display: inline-block;
+    width: 250px;
+    background-color: red;
+}
+
+.model-tile img {
+    width: 150px;
+    height: 150px;
   
-    
-    
-
-}
-.project-text{
-    text-align: center;
-    color: black;
-
-
-}
-
-   
-.description{
-    text-align: center;
-   color: aliceblue;
-   padding-right: 30px;
-   
-
 }
 
 footer{
 color: aliceblue;
-background-color: rgb(146, 141, 141);
+background-color: grey;
 margin-top: 0px;
 padding-top: 5px;
 font-size: xx-large;
 height: 650px;
-
 
 }
 hr{
@@ -185,124 +212,35 @@ padding-top: 5px;
     padding-top: 5px;
     height: 50px;
     text-align: center;
-   
-
+ 
 }
 img{
     padding-top: 50px;
-}
+} 
 .para-heading{
     margin-left: 20px;
+
 }
 
 
-button{
-        height:40px;
-        background-color: rgb(65, 247, 65);
-        border-radius: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 
-input[type="text"]{
-        width: 1080px;
-        height: 40px;
-        border-radius: 5px;
-        padding-left: 10px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        }
 
 
 
 
 
       @media (max-width: 425px) {
-                header{
-                    width: 680px;
-                    position: fixed;
-                }
-                div.right-nav{
-                    width: 590px;
-                }
-                .bottom-list{
-                    width: 100px;
-                  padding-right: 150px;
-                  display: flex;
-                  justify-content: flex-end;
-                  
-                }
-            
-
-                ul.bottom-navigation{
-                  justify-content: flex-end;
-                  width: 680px;
-                 
-                 
-                    }
                 
-             body{
-                width: 100%;
-            
-                }
 
-                .welcome-section{
-                    background-color: rgb(207, 162, 207);
-                    justify-content: center;
-                    padding-top: 20px;
-                    padding-bottom:40px; 
-                    padding-left: 50px;
-                height: max-content;
-                padding-right: 10px;
-                width: 660px;
-                margin-left: 0px;
-                margin-right: 10px;
-                
-                }
 
-                .para-heading{
-                    padding-left: 10px;
-                  width: max-content;
-                  padding-right: 20px;
-                  justify-content: center;
-         
-        }
-        #projects-section{
-            padding-top:100px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin-right: 10px;
-            padding-bottom: 50px;
-            justify-content: center;
-            width: 680px;
-            height: 900px;
-           
-            
+
         }
         
-            .project-tile{
-                margin-right: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                background-color: blueviolet;
-               width: 200px;
-            
+        
+       
 
-            }
+     
 
-            footer{
-                margin-top: 0px;
-                padding-top: 100px;
-               margin-right: 0px;
-               width: 720px;
-                
-                }
-}
 
-.tab {
-    float: left;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 30%;
-    height: 300px;
-  }
-  
+
+   
