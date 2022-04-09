@@ -166,6 +166,7 @@ justify-content: center;
     border: 1px solid #71717133;
     border-radius: .3rem;
     margin-bottom: .1rem;
+    list-style: none;
 }
 
 
@@ -211,7 +212,7 @@ padding-top: 5px;
 .bottom-footer{
     padding-top: 5px;
     height: 50px;
-    text-align: center;
+    text-align:left;
  
 }
 img{
@@ -222,7 +223,11 @@ img{
 
 }
 
-
+.footer-menu{
+    display: inline-block;
+    width: 500px;
+    margin-left: 100px;
+}
 
 
 
