@@ -371,17 +371,17 @@ if (typeof(cart) === 'object'){
 
 
 
-// function searchProduct(name){
-//    return products.filter(function(product) {
-//       return product.name.toLowerCase() == name.toLowerCase()
-//    })
-// }
-// function registerEvents(){
-//    O("btnSearch").addEventListener("click", function(e) {
-//       let searchInput = O("searchbar").value
-//       let searchResults = searchProduct(searchInput)
-//       console.log(searchResults)
-//    })
-// }
+function searchProduct(name){
+   return products.filter(function(product) {
+      return product.name.toLowerCase() == name.toLowerCase()
+   })
+}
+function registerEvents(){
+   O("btnSearch").addEventListener("click", function(e) {
+      let searchInput = O("searchbar").value
+      let searchResults = searchProduct(searchInput)
+      console.log(searchResults)
+   })
+}
 
-// registerEvents()
+registerEvents()
