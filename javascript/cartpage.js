@@ -1,42 +1,38 @@
 
-const samsungModelsElement = document.getElementById("samsung-models")
+const cartContainerElement = document.getElementById("cart-container")
+const totalAmountElement = document.getElementById("total-cart-amount")
 
-//display samsung models from storage
-const samsungElementList = products.map(function(product, index){
+
+const cartStr = localStorage.getItem("cart")
+
+let cartElements = JSON.parse(cartStr)
+
+//display cart items from storage
+const cartElementList = cartElements.map(function(cartItem, index){
    let liElement = document.createElement("li")
-   liElement.classList.add("model-tile")
    liElement.id = index
-
-   let aElement = document.createElement("a")
-   aElement.id = "itemcartpage-link"
-   aElement.href = `./itemcartpage.html?product=${product.id}`
-   liElement.appendChild(aElement)
-
-   let divElement = document.createElement("div")
-   aElement.appendChild(divElement)
-
-   let productimageElement = document.createElement("img")
-   productimageElement.src = product.image
-
-   let productnameElement = document.createElement("p")
-   productnameElement.innerText = product.name
-
-   let productPriceElement = document.createElement("p")
-   productPriceElement.innerText = product.price
-
-   divElement.appendChild(productimageElement)
-   divElement.appendChild(productnameElement)
-   divElement.appendChild(productPriceElement)
-
+   liElement.innerText = cartItem.name
    return liElement
 })
 
-// console.log(samsungElementList)
+cartContainerElement.append(...cartElementList)
 
-samsungModelsElement.append(...samsungElementList)
+// Get total amount in cart
 
-// samsungElementList.forEach(element => {
-//    samsungModelsElement.appendChild(element)
-// })
+totalAmount = 0
 
-// console.log(samsungModelsElement)
+cartElements.forEach(product => {
+   let price = product.price
+   price = price.replaceAll(',', '')
+   price = price.replaceAll(' ', '')
+   price = price.replace('UGX', '')
+   
+   price = parseFloat(price)
+
+   totalAmount += price
+});
+
+// totalAmountElement.innerText = "UGX " + totalAmount
+totalAmountElement.innerText = `UGX ${totalAmount}`
+
+

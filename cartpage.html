@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Phone World</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/itemcartpage.css">
+    <link rel="stylesheet" href="styles/cartpage.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Slabo+27px&display=swap"
+        rel="stylesheet">
 
     <style type="text/css">
         body,
@@ -35,6 +38,7 @@
     </style>
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -42,18 +46,17 @@
 
                 <div class="left-nav">
                     <span class="nav-text">Free Delivery</span>
-                    <span class="nav-text">Call to Order   0705119096</span>
+                    <span class="nav-text">Call to Order 0705119096</span>
 
                     <div class="right-nav">
 
 
                         <form>
 
-                            <button type="submit" id="btnLogin"  formaction="">Login</button>
-                            <button type="button" id="btnSignUp" formaction=""
-                                target="_blank">SignUp</button>
+                            <button type="submit" id="btnLogin" formaction="">Login</button>
+                            <button type="button" id="btnSignUp" formaction="" target="_blank">SignUp</button>
 
-                           
+
 
                         </form>
 
@@ -67,15 +70,15 @@
 
         <section class="search-area">
             <div>
-               
+
                 <ul class="bottom-navigation">
                     <span style="font-weight: bold;">GADGET WORLD</span>
-                    
+
                     <span class="search-span">
                         <div id="">
                             <input type="text" id="searchbar" placeholder="Search Brands and Categories">
 
-                            <button id="btnSearch" >SEARCH</button>
+                            <button id="btnSearch">SEARCH</button>
 
                         </div>
                     </span>
@@ -84,9 +87,9 @@
                     <i class="fa-solid fa-user-large">Account</i>
                     <i class="fa-solid fa-circle-question">Help</i>
 
-                    <a id="cartpage-link" href="./cartpage.html" alt="cartMenu style="margin-right: 50px;>
+                    <a id="cartpage-link" href="./cartpage.html" alt="cartMenu style=" margin-right: 50px;>
                         <i class="fa-solid fa-cart-shopping">Cart</i></a>
-                        
+
 
                 </ul>
             </div>
@@ -102,35 +105,35 @@
                     <a>
                         <div>
                             <img id="product-img" src="assets/Images/iphone.jpg" />
-                            
+
                         </div>
                     </a>
                 </li>
-               
+
             </div>
         </div>
 
         <div class="right-div">
-       
-            <ul class="phone-description">
-                <p id="cartMenuDisplay" >Ordered Items</p>
-<!--                 
-                <p id="product-brand"></p>
-                <p id="product-name"></p>
-                <p id="product-price"></p>
+            <div class="phone-description">
+                <h4>Ordered Items</h4>
+                <ul id="cart-container">
+                    <!-- placeholder for cart items -->
+                </ul>
+            </div>
+            <div>
+                <span>
+                    Total
+                </span>
+                <span id="total-cart-amount">
 
-                <li class="phone-brand" ><a href="javascript:void(0)" id="btn-add-cart">Add to Cart</a></li> -->
-
-               
-                
-            </ul>
-      
+                </span>
+            </div>
         </div>
 
 
     </section>
 
-    
+
 
 
 
@@ -151,35 +154,31 @@
                     class="fa-solid fa-mobile-screen-button"></i>
                 Call us</a>
         </div>
-        <br>
-        <hr>
+        <br />
+        <hr />
         <div class="bottom-footer">
             <span class="footer-menu">
-                <p>ABOUT GADGET WORLD</p> 
+                <p>ABOUT GADGET WORLD</p>
                 <p>About Us</p>
                 <p>Careers</p>
                 <p>Terms & Conditions</p>
-                
-                
-                
-                
-                
             </span>
-           <span class="footer-menu">
-            <p> PAYMENT METHODS</p>
-            <p> Airtel Money</p>
-            <p> Mtn Money</p>
-            <p> MasterCard</p>
+            <span class="footer-menu">
+                <p> PAYMENT METHODS</p>
+                <p> Airtel Money</p>
+                <p> Mtn Money</p>
+                <p> MasterCard</p>
 
-           </span>
-          
+            </span>
+
         </div>
 
     </footer>
-    <script src="javascript/osc.js" ></script>
-    <script src="javascript/cartpage.js" ></script>
-    <script src="javascript/itemcartpage.js" ></script>
-    <script src="javascript/index.js" ></script>
-    <script src="javascript/signup.js" ></script>
+    <script src="javascript/osc.js"></script>
+    <script src="javascript/cartpage.js"></script>
+    <script src="javascript/itemcartpage.js"></script>
+    <script src="javascript/index.js"></script>
+    <script src="javascript/signup.js"></script>
 </body>
+
 </html>
