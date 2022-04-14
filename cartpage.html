@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
     <title>Phone World</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/itemcartpage.css">
+    <!-- <link rel="stylesheet" href="styles/itemcartpage.css"> -->
     <link rel="stylesheet" href="styles/cartpage.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -46,17 +46,18 @@
 
                 <div class="left-nav">
                     <span class="nav-text">Free Delivery</span>
-                    <span class="nav-text">Call to Order 0705119096</span>
+                    <span class="nav-text">Call to Order   0705119096</span>
 
                     <div class="right-nav">
 
 
                         <form>
 
-                            <button type="submit" id="btnLogin" formaction="">Login</button>
-                            <button type="button" id="btnSignUp" formaction="" target="_blank">SignUp</button>
+                            <button type="submit" id="btnLogin"  formaction="">Login</button>
+                            <button type="button" id="btnSignUp" formaction=""
+                                target="_blank">SignUp</button>
 
-
+                           
 
                         </form>
 
@@ -70,25 +71,59 @@
 
         <section class="search-area">
             <div>
-
+               
                 <ul class="bottom-navigation">
-                    <span style="font-weight: bolder;width: 150px; margin-right: 80px; margin-left: 80px;">GADGET WORLD</span>
+                 
+                    <span style="width:300px;"><i class="fa-solid fa-truck-fast">GADGET WORLD</i></span>
+                    <!-- <i class="fa-solid fa-truck-fast"></i> -->
 
+                    
                     <span class="search-span">
-                        <div id="">
-                            <input type="text" id="searchbar" placeholder="Search Brands and Categories">
+                        <div>
+                            <span>
+                                <input type="text" id="searchbar" placeholder="Search Brands and Categories">
+                            </span>
+                           <span>
+                            <button id="btnSearch" >SEARCH</button>
 
-                            <button id="btnSearch">SEARCH</button>
+                           </span>
 
                         </div>
+                                    
                     </span>
+                    <!-- <span style="margin-right:50px; margin-left: 50px; width: 100px; margin-bottom: 200px;">
+                        <p>Home</p>
+                        </span> -->
+
+                        <!-- <span style="width:300px;"><i class="fa-solid fa-user-large">Home</i></span> -->
+
+                   
+
+                    
+            <span style="width:300px; margin-left: 10px;"><i class="fa-solid fa-user-large">Account</i></span>
+                    
+                  
+
+                    <!-- <a  href="./cartpage.html"></a> -->
+                    <!-- <div>
+                    <i class="fa-solid fa-cart-shopping">Cart</i>
+                        <div>
+                        <img src="assets/Images/iphone.jpg" />
+                        <p>Apple Iphone 13</p>
+                        <p>UGX 5,000,000</p>
+                         </div>
+                    </div> -->
+
+                    <span><a id="cartpage-link" href="./cartpage.html" alt="cartMenu" style="margin-right:50px;">
+                        <i class="fa-solid fa-cart-shopping">Cart</i></span></a>
+                        
 
 
-                    <i class="fa-solid fa-user-large">Account</i>
-                 
 
-                    <a id="cartpage-link" href="./cartpage.html" alt="cartMenu style=" margin-right: 50px;>
-                        <i class="fa-solid fa-cart-shopping">Cart</i></a>
+
+                
+                </div>
+                    <!-- </a> -->
 
 
                 </ul>
@@ -99,43 +134,50 @@
     </header>
 
     <section id="main">
-        <div class="left-div">
-            <div class="category-section">
-                <li class="model-tile">
-                    <a>
-                        <div>
-                            <img id="product-img" src="assets/Images/iphone.jpg" />
+       
 
-                        </div>
-                    </a>
-                </li>
-
-            </div>
-        </div>
-
-        <div class="right-div">
-            <div class="phone-description">
+        <div class="left-divison">
+            <div class="cart-summary">
                 <h6>CART SUMMARY</h6>
                 <ul id="cart-container">
-                    <!-- placeholder for cart items -->
-                </ul>
-            </div>
-            <div>
-                <span>
-                    Total
-                </span>
-                <span id="total-cart-amount">
+                                 <!-- placeholder for cart items -->
 
-                </span>
+                    <!-- <li class="cart-items">
+                        
+                            <div>
+                                    <img src="assets/Images/iphone.jpg" />
+                                    <p>Apple Iphone 13</p>
+                                    <p>UGX 5,000,000</p>
+                             </div>
+                        </a>
+                    </li> --> 
+
+
+                </ul>
+
+
             </div>
+            
+        </div>
+
+         <div class="right-division">
+
+            <div class="category-section">
+                <div>
+                    <span>
+                        Total
+                    </span>
+                    <span id="total-cart-amount">
+    
+                    </span>
+                </div>
+
+            </div> 
+
         </div>
 
 
     </section>
-
-
-
-
 
     <footer>
 
@@ -173,7 +215,7 @@
 
         </div>
 
-    </footer>
+    </footer>   
     <script src="javascript/osc.js"></script>
     <script src="javascript/cartpage.js"></script>
     <script src="javascript/itemcartpage.js"></script>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
-    <title>Phone World</title>
+    <title>Gadget World</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/itemcartpage.css">
 
@@ -69,24 +69,57 @@
             <div>
                
                 <ul class="bottom-navigation">
-                    <span style="font-weight: bolder;width: 150px; margin-right: 80px; margin-left: 80px;">GADGET WORLD</span>
+                 
+                    <span style="width:300px;"><i class="fa-solid fa-truck-fast">GADGET WORLD</i></span>
+                    <!-- <i class="fa-solid fa-truck-fast"></i> -->
+
                     
                     <span class="search-span">
-                        <div id="">
-                            <input type="text" id="searchbar" placeholder="Search Brands and Categories">
-
+                        <div>
+                            <span>
+                                <input type="text" id="searchbar" placeholder="Search Brands and Categories">
+                            </span>
+                           <span>
                             <button id="btnSearch" >SEARCH</button>
 
+                           </span>
+
                         </div>
+                                    
                     </span>
+                    <!-- <span style="margin-right:50px; margin-left: 50px; width: 100px; margin-bottom: 200px;">
+                        <p>Home</p>
+                        </span> -->
 
+                        <!-- <span style="width:300px;"><i class="fa-solid fa-user-large">Home</i></span> -->
 
-                    <i class="fa-solid fa-user-large">Account</i>
-                  
+                   
+
                     
-                    <a id="cartpage-link" href="./cartpage.html" alt="cartMenu style="margin-right: 50px;>
-                        <i class="fa-solid fa-cart-shopping">Cart</i></a>
+            <span style="width:300px; margin-left: 10px;"><i class="fa-solid fa-user-large">Account</i></span>
+                    
+                  
+
+                    <!-- <a  href="./cartpage.html"></a> -->
+                    <!-- <div>
+                    <i class="fa-solid fa-cart-shopping">Cart</i>
+                        <div>
+                        <img src="assets/Images/iphone.jpg" />
+                        <p>Apple Iphone 13</p>
+                        <p>UGX 5,000,000</p>
+                         </div>
+                    </div> -->
+
+                    <span><a id="cartpage-link" href="./cartpage.html" alt="cartMenu" style="margin-right:50px;">
+                        <i class="fa-solid fa-cart-shopping">Cart</i></span></a>
                         
+
+
+
+
+                
+                </div>
+                    <!-- </a> -->
 
 
                 </ul>
@@ -102,7 +135,7 @@
                 <li class="model-tile">
                     <a>
                         <div>
-                            <img id="product-img" src="assets/Images/samsung/samsung-galaxy-s21-ultra-5g-.jpg"/>
+                            <img id="product-img" src=""/>
                             
                         </div>
                     </a>
@@ -117,11 +150,14 @@
         <div class="right-div">
        
             <ul class="phone-description">
-                <p>Apple iPhone 13 Pro Max 6.7" 6GB RAM 256GB</p>
-                <p>ROM 12MP - Sierra Blue</p>
-                <p id="product-brand"></p>
+                
+                <p id="product-description"></p>
                 <p id="product-name"></p>
+                <p id="product-brand"></p>
+                <!-- <p id="product-color"></p> -->
+                <p id="product-stock"></p>
                 <p id="product-price"></p>
+               
 
                 <li class="phone-brand" ><a href="javascript:void(0)" id="btn-add-cart">Add to Cart</a></li>
 

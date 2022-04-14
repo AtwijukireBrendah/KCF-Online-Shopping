@@ -1,12 +1,12 @@
 
-// function O(id){
-//     return document.getElementById(id)
-// }
+function O(id){
+    return document.getElementById(id)
+}
 
-// function S(id){
-//     return document.getElementById(id).style
-// }
+function S(id){
+    return document.getElementById(id).style
+}
 
-// function C(name){
-//     return document.getElementsByClassName(name)
-// }
+function C(name){
+    return document.getElementsByClassName(name)
+}

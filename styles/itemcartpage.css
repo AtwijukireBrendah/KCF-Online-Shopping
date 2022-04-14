@@ -17,4 +17,15 @@ margin-bottom: 100px; */
     width: 800px;
     margin-left: 40px;
     text-align: center;
+    
 }
+
+
+
+.phone-brand:hover{
+    background-color:orange;
+  }
+  
+  .phone-brand:focus{
+    background-color:red;
+  }
