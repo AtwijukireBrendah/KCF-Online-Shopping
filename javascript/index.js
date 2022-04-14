@@ -431,7 +431,6 @@ function registerEvents(){
       let searchInput = O("searchbar").value
       let searchResults = searchProduct(searchInput)
       console.log(searchResults)
+      // alert(searchResults)
    })
 }
-
-registerEvents()

@@ -6,6 +6,7 @@ const url = new URL(urlString)
 let productId = url.searchParams.get("product")
 
 const productFromStorage = JSON.parse(localStorage.getItem("products"))
+const searchResults = JSON.parse(localStorage.getItem("results"))
 
 // Find our product from products in storage by ID
 let result = productFromStorage.filter(function(product){
@@ -18,7 +19,7 @@ let product = result[0]
 // Set product image by changing the src attribute
 let imageElement = document.getElementById("product-img")
 imageElement.src = product.image
-imageElement.setAttribute('style','width:10%, height:10%; color:black;')
+imageElement.setAttribute('style','width:10%, height:10%; color:black; font-size:xx-large;')
 
 
 
@@ -26,7 +27,7 @@ imageElement.setAttribute('style','width:10%, height:10%; color:black;')
 // Set product description by changing the innerText attribute
 let descriptionElement = document.getElementById("product-description")
 descriptionElement.innerText = product.description
-descriptionElement.setAttribute('style','color:black; font-size:xx-large; text-align:center; padding-top:5px; font-size:xx-large;')
+descriptionElement.setAttribute('style','color:black; font-size:xx-large; text-align:center; padding-top:5px;')
 
 
 // // Set product description by changing the innerText attribute
@@ -38,7 +39,7 @@ descriptionElement.setAttribute('style','color:black; font-size:xx-large; text-a
 // Set product description by changing the innerText attribute
 let brandElement = document.getElementById("product-brand")
 brandElement.innerText = "Brand: " + product.brand
-brandElement.setAttribute('style','color:black; font-size:xx-large; align-text:left;font-size:x-large;')
+brandElement.setAttribute('style','color:black; font-size:xx-large; align-text:left;')
 
 
 // // Set product name by changing the innerText attribute
@@ -50,13 +51,13 @@ brandElement.setAttribute('style','color:black; font-size:xx-large; align-text:l
 // Set product name by changing the innerText attribute
 let stockElement = document.getElementById("product-stock")
 stockElement.innerText = "In stock: " + product.stock
-stockElement.setAttribute('style','color:black; font-size:x-large;')
+stockElement.setAttribute('style','color:black; font-size:xx-large;')
 
 
 // Set product price by changing the innerText attribute
 let priceElement = document.getElementById("product-price")
 priceElement.innerText = product.price
-priceElement.setAttribute('style','color:black; font-size:xx-large;color:orange;font-size:xx-large;')
+priceElement.setAttribute('style','color:black; font-size:xx-large;color:orange;')
 
 
 let btnAddToCart = document.getElementById("btn-add-cart")

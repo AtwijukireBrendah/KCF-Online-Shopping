@@ -50,6 +50,8 @@ const cartElementList = cartElements.map(function(cartItem, index){
    iconElement.classList.add("fa-trash-can");
    //<i class="fa-solid fa-trash-can"></i>
 
+   
+
    // //clear storage items
    clearElement.classList.add("fa-solid")
    clearElement.classList.add("fa-trash-can-list")

@@ -74,6 +74,7 @@ div.right-nav{
 
 ul.bottom-navigation{
     background-color: white;
+    position: fixed;
     color: black;
      height: 80px;
    display: flex;
@@ -182,6 +183,12 @@ justify-content: center;
    
 }
 
+
+.phone-brand:hover{
+    background-color:orange;
+  }
+
+
 .phone-brand {
     border: 1px solid #71717133;
     border-radius: .3rem;
@@ -260,6 +267,28 @@ img{
     width: 500px;
     margin-left: 100px;
 }
+
+
+
+a:link {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: orange;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color:rgb(46, 46, 161);
+    background-color: transparent;
+    text-decoration: underline;
+
+ 
+
 
 
 
