@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0">
+    <title>Phone World</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&family=Slabo+27px&display=swap" rel="stylesheet">
+
+    <style type="text/css">
+        body,
+        header,
+        footer {
+            font-family: Slabo;
+            font-size: xx-large;
+        }
+
+        i {
+            font-size: 25px;
+            margin-right: 50px;
+            padding-top: 15px;
+
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navigation-bar">
+
+                <div class="left-nav">
+                    <span class="nav-text">Free Delivery</span>
+                    <span class="nav-text">Call to Order   0705119096</span>
+
+                    <div class="right-nav">
+
+                        
+                        <button id="myButton1" class="float-left submit-button" >Login/signUp</button>
+
+                        <script type="text/javascript">
+                            document.getElementById("myButton1").onclick = function () {
+                            location.href = "./login-signup.html";
+                            };
+                        </script>                    
+
+
+
+                 </div>
+
+
+
+
+                    <!-- <div class="right-nav">
+
+
+                        <form>
+
+                            <button type="submit" id="btnLogin"  formaction="">Login</button>
+                            <button type="button" id="btnSignUp" formaction=""
+                                target="_blank">SignUp</button>
+
+                           
+
+                        </form>
+
+
+
+                    </div> -->
+                </div>
+
+            </ul>
+        </nav>
+
+        <section class="search-area">
+            <div>
+               
+                <ul class="bottom-navigation">
+
+                    <span><a id="homepage-link" href="./index.html" alt="homepage" style="width:300px;">
+                                <i class="fa-solid fa-truck-fast">GADGET WORLD</i></span></a>
+                                  
+                    
+                     <span class="search-span">
+                            <div>
+                                <span>
+                                         <input type="text" id="searchbar" placeholder="Search Brands and Categories">
+                                 </span>
+                                       <span><button id="btnSearch" >SEARCH</button>
+                                 </span>
+            
+                             </div>
+                                                
+                    </span>
+                  
+                    <!-- <a href="./searchresults.html" alt="search" >go to search</a> -->
+                   
+
+                    
+            <span style="width:300px; margin-left: 10px;"><i class="fa-solid fa-user-large">Account</i></span>
+                    
+                  
+
+                    <!-- <a  href="./cartpage.html"></a> -->
+                    <!-- <div>
+                    <i class="fa-solid fa-cart-shopping">Cart</i>
+                        <div>
+                        <img src="assets/Images/iphone.jpg" />
+                        <p>Apple Iphone 13</p>
+                        <p>UGX 5,000,000</p>
+                         </div>
+                    </div> -->
+
+                    <span><a id="cartpage-link" href="./cartpage.html" alt="cartMenu" style="margin-right:50px;">
+                        <i class="fa-solid fa-cart-shopping">Cart</i></span></a>
+                        
+
+
+
+
+                
+                </div>
+                    <!-- </a> -->
+
+
+                </ul>
+            </div>
+
+
+        </section>
+    </header>
+
+    <section id="main">
+        <div class="left-div">
+            <div class="category-section">
+                <ul class="phone-brands-list">
+
+                    
+                    <li class="phone-brand" ><a href="#bar-iphone"><span style="padding-left:5px">Iphone</span></a></li>
+                    <li class="phone-brand" ><a href="#bar-samsung"><span style="padding-left:30px">Samsung</span></a></li>
+                    <li class="phone-brand" ><a href="#bar-infinix">Infinix</a></li>
+                    <li class="phone-brand" ><a href="#bar-tecno">Techno</a></li>
+
+                   
+                    
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-div">
+            <div>
+                <img src="assets/Images/flash-sale.jpg" />
+                <p>Apple Iphone 13</p>
+                <p>UGX 3,000,000</p>
+                <p>10% Discount</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="display-section">
+        <div class="model-section">
+            <div id="section-iphone">
+                <h2 id="bar-iphone" style="background-color:orange; width: 104%; height: 40px; padding-bottom: 15px;"><u>Iphone</u></h2>
+                <ul id="iphone-models" class="models">
+                    <!-- <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=0001">
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 13</p>
+                                <p>UGX 5,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=P002">
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 12</p>
+                                <p>UGX 4,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=P003">
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 11</p>
+                                <p>UGX 3,000,000</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/iphone.jpg" />
+                                <p>Apple Iphone 11</p>
+                                <p>UGX 5,000,000</p>
+                            </div>
+                        </a>
+                    </li> -->
+                    <!-- </ul> -->
+                </div>
+            </div>
+            <br>
+           
+        </div>
+        <br>
+
+        <div class="model-section">
+            <div id="section-samsung">
+                <h2 id="bar-samsung" style="background-color:orange; width:104%; height: 40px; padding-bottom: 15px;"><u>Samsung</u></h2>
+                <ul id="samsung-models" class="models">
+                    <!-- <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=S001"></a>
+                            <div>
+                                <img src="assets/Images/samsung galaxy s22.webp" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/samsung-galaxy-s21-ultra-5g-.jpg" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/samsung galaxy s22.webp" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/samsung galaxy s22.webp" />
+                                <p>name</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+            <br>
+           
+        </div>
+
+        <div class="model-section">
+            <div id="section-infinix">
+                <h2 id="bar-infinix" style="background-color:orange; width:104%; height: 40px; padding-bottom: 15px;"><u>Infinix</u></h2>
+                <ul id="infinix-models" class="models">
+                    <!-- <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=F001"></a>
+                            <div>
+                                <img src="assets/Images/infinix.jpg" />
+                                <p>Infinix Zero 6</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/infinix.jpg" />
+                                <p>Infinix Zero 6</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/infinix.jpg" />
+                                <p>Infinix Zero 6</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/infinix.jpg" />
+                                <p>Infinix Zero 6</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+            <br>
+           
+        </div>
+
+        <div class="model-section">
+            <div id="section-tecno">
+                <h2 id="bar-tecno" style="background-color:orange; width:104%; height: 40px; padding-bottom: 15px;"><u>Tecno</u></h2>
+                <ul id="tecno-models" class="models">
+                    <!-- <li class="model-tile">
+                        <a id="itemcartpage-link" href="./itemcartpage.html?product=T001"></a>
+                            <div>
+                                <img src="assets/Images/tecno-camon-18p.jpg" />
+                                <p>Tecno-camon-18p</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/tecno-pop5.jpg" />
+                                <p>Tecno-pop5</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/tecno-spark-8.jpg" />
+                                <p>Tecno-spark-8</p>
+                                <p>price</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="model-tile">
+                        <a>
+                            <div>
+                                <img src="assets/Images/tecno-spark-go-2021.jpg" />
+                                <p class="model-tag">Tecno-spark-go</p>
+                                <p class="model-tag">price</p>
+                            </div>
+                        </a>
+                    </li> -->
+                    </ul>
+                </div>
+            </div>
+            <br>
+           
+        </div>
+
+       
+        <br>
+        <br>
+
+    </section>
+
+
+
+    <footer>
+
+        <div id="top-footer">
+            <p>FOLLOW US </p>
+            <br>
+            <a href="https://facebook.com/" alt="facebook" style="margin-right: 50px;"><i
+                    class="fa-brands fa-facebook-square"></i>
+                Facebook</a>
+            <a href="https://twitter.com/" alt="twitter" style="margin-right: 50px;"><i
+                    class="fa-brands fa-twitter"></i>
+                Twitter</a>
+            <a href="https://gmail.com/" alt="email" style="margin-right: 50px;"><i class="fa-solid fa-at"></i>
+                Send a mail</a>
+            <a href="https://join.skype.com/invite/AFHhgVLRil0M" alt="skype"> <i
+                    class="fa-solid fa-mobile-screen-button"></i>
+                Call us</a>
+        </div>
+        <br>
+        <hr>
+        <div class="bottom-footer">
+            <span class="footer-menu">
+                <p>ABOUT GADGET WORLD</p> 
+                <p>About Us</p>
+                <p>Careers</p>
+                <p>Terms & Conditions</p>
+                
+                
+                
+                
+                
+            </span>
+           <span class="footer-menu">
+            <p> PAYMENT METHODS</p>
+            <p> Airtel Money</p>
+            <p> Mtn Money</p>
+            <p> MasterCard</p>
+
+           </span>
+          
+        </div>
+
+    </footer>
+  
+    <script src="javascript/index.js" ></script>
+    <script src="javascript/osc.js" ></script>
+    <!-- <script src="javascript/searchresults.js" ></script> -->
+    <script src="javascript/signup.js" ></script>
+</body>
+</html>
+
