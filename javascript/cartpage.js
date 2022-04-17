@@ -30,12 +30,12 @@ const cartElementList = cartElements.map(function(cartItem, index){
    
    let productNameElement = document.createElement("p")
    productNameElement.innerText = cartItem.name
-   productNameElement.setAttribute('style','color:black;font-size:x-large')
+   productNameElement.setAttribute('style','color:black;font-size:x-large;')
   
 
    let productPriceElement = document.createElement("p")
    productPriceElement.innerText = cartItem.price
-   productPriceElement.setAttribute('style','color:green;font-size:x-large')
+   productPriceElement.setAttribute('style','color:green;font-size:x-large;')
    
   
 

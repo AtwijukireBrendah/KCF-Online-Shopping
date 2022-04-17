@@ -41,7 +41,7 @@ button{
     border-radius: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    width: 70px;
+    width: 100px;
     font-weight: bolder;
 }
 
@@ -61,6 +61,7 @@ div.right-nav{
  
   
 }
+
 #btnLogin,#btnSignUp{
     background-color: white;
     color: black;

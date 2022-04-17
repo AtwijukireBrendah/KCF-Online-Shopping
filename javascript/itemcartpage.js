@@ -41,12 +41,6 @@ brandElement.innerText = "Brand: " + product.brand
 brandElement.setAttribute('style','color:black; font-size:xx-large; align-text:left;font-size:x-large;')
 
 
-// // Set product name by changing the innerText attribute
-// let colorElement = document.getElementById("product-color")
-// colorElement.innerText = "Color: " + product.color
-// colorElement.setAttribute('style','color:black; font-size:xx-large;')
-
-
 // Set product name by changing the innerText attribute
 let stockElement = document.getElementById("product-stock")
 stockElement.innerText = "In stock: " + product.stock
